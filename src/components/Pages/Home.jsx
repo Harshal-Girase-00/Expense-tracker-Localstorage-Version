@@ -4,7 +4,7 @@ import { TransactionContext } from "../../context/TransactionContext";
 import { useContext } from "react";
 const Home = () => {
   const { user } = useContext(UserContext);
-  const { getUserLastThreeTxt } = useContext(TransactionContext);
+  const { getUserLastThreeTxt , getUserMonthlyIncome , getUserMonthlyExpense , getUserRemaningAmount} = useContext(TransactionContext);
   const lastThree = getUserLastThreeTxt() || [];
 
   return (
@@ -66,7 +66,7 @@ const Home = () => {
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Total Income
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">$12,500</p>
+                  <p className="text-4xl text-black font-bold p-0">${getUserMonthlyIncome()}</p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     This month
                   </p>
@@ -85,7 +85,7 @@ const Home = () => {
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Total Expense
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">$12,500</p>
+                  <p className="text-4xl text-black font-bold p-0">${getUserMonthlyExpense()}</p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     This month
                   </p>
@@ -104,7 +104,7 @@ const Home = () => {
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Remaining Balance
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">$8,500</p>
+                  <p className="text-4xl text-black font-bold p-0">${getUserRemaningAmount()}</p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     Available
                   </p>

@@ -110,6 +110,64 @@ const editTxt = (id , updatedFields) => {
   setAllTxt(updatedAll);
 };
 
+const getUserMonthlyIncome = () => {
+  const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!currentUser) return 0;
+
+  const userTxt = alltxt[currentUser] || [];
+
+  const now = new Date();
+  const month = now.getMonth();
+  const year = now.getFullYear();
+
+  return userTxt
+    .filter((t) => {
+      const d = new Date(t.date);
+      return (
+        t.category === "Income" &&
+        d.getMonth() === month &&
+        d.getFullYear() === year
+      );
+    })
+    .reduce((sum, t) => sum + Number(t.amount), 0);
+};
+
+const getUserMonthlyExpense = () => {
+  const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!currentUser) return 0;
+
+  const userTxt = alltxt[currentUser] || [];
+
+  const now = new Date();
+  const month = now.getMonth();
+  const year = now.getFullYear();
+
+  return userTxt
+    .filter((t) => {
+      const d = new Date(t.date);
+      return (
+        t.category === "Expense" &&
+        d.getMonth() === month &&
+        d.getFullYear() === year
+      );
+    })
+    .reduce((sum, t) => sum + Number(t.amount), 0);
+};
+
+const getUserRemaningAmount = () => {
+  const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!currentUser) return 0;
+
+  const userTxt = alltxt[currentUser] || [];
+
+  const userIncome = Number(userTxt.filter(t => t.category === "Income").reduce((sum , t) => sum + Number(t.amount),0));
+  const userExpense = Number(userTxt.filter(t => t.category === "Expense").reduce((sum , t) => sum + Number(t.amount),0));
+
+  return userIncome - userExpense;
+}
+
+
+
 
 
   return (
@@ -122,6 +180,9 @@ const editTxt = (id , updatedFields) => {
         getPaginatedTransactions,
         deleteTransaction,
         editTxt,
+        getUserMonthlyIncome,
+        getUserMonthlyExpense,
+        getUserRemaningAmount
       }}
     >
       {children}

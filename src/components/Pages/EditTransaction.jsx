@@ -54,7 +54,7 @@ const EditTransaction = () => {
         Edit Transaction
       </h1>
 
-      <div className="h-auto bg-white shadow-xl rounded-3xl min-h-96 mt-6 pb-10">
+      <form onSubmit={handleUpdate} className="h-auto bg-white shadow-xl rounded-3xl min-h-96 mt-6 pb-10">
         <div className="flex md:flex-row gap-6 px-8 pt-8">
           <div className="w-1/3">
             <label className="w-full font-semibold text-slate-600 block mb-2">
@@ -65,7 +65,7 @@ const EditTransaction = () => {
               value={date}
               onChange={(e) => setDate(e.target.value)}
               className="w-full p-2 border-2 border-gray-300 rounded-xl"
-            />
+            required/>
           </div>
 
           <div className="w-full">
@@ -76,7 +76,7 @@ const EditTransaction = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               className="w-full p-2 border-2 border-gray-300 rounded-xl"
-            ></textarea>
+            required></textarea>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ const EditTransaction = () => {
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 className="md:w-full outline-none"
-              />
+              required/>
             </div>
           </div>
 
@@ -105,11 +105,11 @@ const EditTransaction = () => {
                 Category
               </label>
 
-              <select
+              <select 
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
                 className="w-full p-2 border-2 border-gray-300 rounded-xl"
-              >
+             required >
                 <option value="Income">Income</option>
                 <option value="Expense">Expense</option>
               </select>
@@ -120,7 +120,7 @@ const EditTransaction = () => {
                 Method
               </label>
 
-              <select
+              <select required
                 value={method}
                 onChange={(e) => setMethod(e.target.value)}
                 className="w-full p-2 border-2 border-gray-300 rounded-xl"
@@ -135,7 +135,6 @@ const EditTransaction = () => {
 
         <div className="flex gap-4 md:w-1/3 px-8">
           <button
-            onClick={handleUpdate}
             className="rounded-xl bg-blue-700 py-2 px-4 text-white font-semibold"
           >
             Update Transaction
@@ -148,7 +147,7 @@ const EditTransaction = () => {
             Cancel
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

@@ -75,7 +75,7 @@ const ForgotPassword = () => {
             setPhone(e.target.value), setErrors([]);
           }}
           className="h-12 pl-4 rounded-lg  bg-white/70  w-[93%] mb-4"
-          placeholder="Enetr Register Number"
+          placeholder="Enter Register Number"
           required
         />
         <input

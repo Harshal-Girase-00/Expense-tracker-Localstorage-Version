@@ -40,7 +40,7 @@ const About = () => {
             <p className="text-md font-medium">A world where everyone is financially secure</p>
           </div>
         </div>
-
+         
         <div className="flex w-1/3 gap-4 h-32 py-6 px-8 rounded-2xl bg-white shadow-gray-500 shadow-lg">
           <img src="./images/story.png" alt="our mission" />
           <div>
