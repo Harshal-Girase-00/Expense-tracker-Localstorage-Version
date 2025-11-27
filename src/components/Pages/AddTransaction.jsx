@@ -124,7 +124,7 @@ const AddTransaction = () => {
             Save Transaction
           </button>
           <button className="rounded-xl bg-[#bebdbd] py-2 px-4 text-slate-600 font-semibold">
-            Cancle
+            Cancel
           </button>
         </div>
       </form>
