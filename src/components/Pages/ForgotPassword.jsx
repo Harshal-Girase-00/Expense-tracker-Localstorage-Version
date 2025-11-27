@@ -49,10 +49,10 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className=" flex flex-1 min-h-screen  bg-gradient-to-r from-[#E0F2FE] to-[#DCFCE7] items-center justify-center ">
+    <div className=" flex flex-1 min-h-screen  bg-gradient-to-r from-[#E0F2FE] to-[#DCFCE7] items-center justify-center sm:px-0 px-4">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center w-[29rem] p-10 border  rounded-2xl shadow-xl h-auto bg-gradient-to-l from-[#E0F2FE] to-[#DCFCE7]  ]"
+        className="flex flex-col justify-center items-center w-[29rem] sm:py-10 sm:px-10 px-2 py-10 border  rounded-2xl shadow-xl h-auto bg-gradient-to-l from-[#E0F2FE] to-[#DCFCE7] ] "
       >
         <h1 className="text-3xl text-[#000000] mb-8 font-bold">
           Reset Your Password

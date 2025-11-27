@@ -5,13 +5,13 @@ const About = () => {
         <h1 className="sm:text-5xl text-3xl text-slate-700  font-bold w-full text-center mt-8">
           About us
         </h1>
-        <div className="flex justify-center items-center lg:gap-14">
+        <div className="sm:flex justify-center items-center lg:gap-14">
           <img
             src="/images/hero.png"
-            className="w-[42%] px-6 "
+            className="sm:w-[42%] px-6 "
             alt="hero image"
           />
-          <div className="flex  flex-col w-[38%] px-6 items-center">
+          <div className="flex flex-col sm:w-[38%] px-6 items-center sm:mt-0 mt-6">
             <p className="text-[#334155] font-bold text-xl  mb-2 w-full">
               We are dedicated to simplifying personal finance.
             </p>
@@ -24,16 +24,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center px-16 h-56 py-8 rounded-[16px] bg-white/50 lg:gap-8 gap-4">
-        <div className="flex w-1/3 gap-4 lg:[350px] h-32 py-6 px-8 rounded-2xl bg-white  shadow-gray-500 shadow-md">
-          <img src="./images/ourmission.png" alt="our mission" />
+      <div className="sm:flex  sm:mt-0 mt-12 items-center justify-center px-6 sm:px-16 h-56 py-8 rounded-[16px] bg-white/50 lg:gap-8 gap-4 mb-96 sm:mb-0">
+        <div className="flex sm:mt-0 mt-4 sm:w-1/3 gap-4 lg:[350px] h-44 sm:h-32 py-6 px-8 rounded-2xl bg-white  shadow-gray-500 shadow-md">
+          <img src="./images/ourmission.png" className="w-24 h-24 sm:w-auto sm:h-auto" alt="our mission" />
           <div>
             <h1 className="text-xl font-bold text-slate-950 ">Our Mission</h1>
             <p className="text-md font-medium">To make financial tracking accesssiable to everyone</p>
           </div>
         </div>
 
-        <div className="flex w-1/3 gap-4 h-32 py-6 px-8 rounded-2xl bg-white  shadow-gray-500 shadow-lg ">
+        <div className="flex sm:mt-0 mt-4 sm:w-1/3 gap-4 h-32 py-6 px-8 rounded-2xl bg-white  shadow-gray-500 shadow-lg ">
           <img src="./images/vision.png" alt="our mission" />
           <div>
             <h1 className="text-xl font-bold text-slate-950 ">Our Vision</h1>
@@ -41,7 +41,7 @@ const About = () => {
           </div>
         </div>
          
-        <div className="flex w-1/3 gap-4 h-32 py-6 px-8 rounded-2xl bg-white shadow-gray-500 shadow-lg">
+        <div className="flex  sm:mt-0 mt-4 sm:w-1/3 gap-4 h-32 py-6 px-8 rounded-2xl bg-white shadow-gray-500 shadow-lg">
           <img src="./images/story.png" alt="our mission" />
           <div>
             <h1 className="text-xl font-bold text-slate-950 ">Our Story</h1>

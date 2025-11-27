@@ -28,6 +28,7 @@ export const TransactionProvider = ({ children }) => {
   const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
   const addTransaction = (txt) => {
+    const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
     if (!currentUser) return;
 
     const stored = allTransactions();
@@ -47,6 +48,9 @@ export const TransactionProvider = ({ children }) => {
   };
 
   const getUserTransaction = () => {
+    const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (!currentUser) return;
+
     let allTxt = alltxt[currentUser] || [];
 
     return [...allTxt].reverse();
@@ -65,6 +69,7 @@ export const TransactionProvider = ({ children }) => {
 
   const getPaginatedTransactions = (page = 1, limit = 5) => {
     const currentUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (!currentUser) return;
 
     const userTxt = alltxt[currentUser] || [];
 

@@ -30,17 +30,17 @@ const Login = () => {
   };
 
   return (
-    <div className=" flex flex-1 min-h-screen  bg-gradient-to-r from-blue-200 to-green-200 items-center justify-center ">
+    <div className=" flex flex-1 min-h-screen  bg-gradient-to-r from-blue-200 to-green-200 items-center justify-center sm:px-0 px-6">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center w-[27rem] p-10 border rounded-2xl shadow-xl h-auto bg-gradient-to-l from-[#E0F2FE] to-[#DCFCE7]"
+        className="flex flex-col justify-center items-center w-[27rem] sm:py-10 sm:px-10 py-8 px-4 border rounded-2xl shadow-xl h-auto bg-gradient-to-l from-[#E0F2FE] to-[#DCFCE7]"
       >
         <h1 className="text-3xl text-[#000000] mb-8 font-bold">
           Login Account
         </h1>
 
         {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded mb-4 w-[93%] text-center">
+          <div className="bg-red-100 border border-red-400 text-red-700  py-2 rounded mb-4 w-[93%] text-center">
             {error}
           </div>
         )}

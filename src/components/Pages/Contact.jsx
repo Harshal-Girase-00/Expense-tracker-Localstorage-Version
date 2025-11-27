@@ -6,7 +6,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <div className="flex flex-col lg:flex-row justify-between w-full  mt-12 gap-10">
-          <div className="bg-white/40 border shadow-xl p-10 rounded-xl w-full lg:w-1/2  h-96 ">
+          <div className="bg-white/40 border shadow-xl p-10 rounded-xl w-full lg:w-1/2  sm:h-96 ">
             <h1 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Services
             </h1>
@@ -22,16 +22,16 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col w-full lg:w-[40%] ">
-            <div className="flex items-center mb-4">
+            <div className="flex sm:items-center mb-4">
               <img
                 src="/images/location.png"
-                className="w-8 mr-2"
+                className="sm:w-8 w-8 h-8 mr-2"
                 alt="lacation"
               />{" "}
               <span className="text-slate-950 font-bold text-lg mr-1">
                 Address:
               </span>
-              <span className="text-lg ">C.B.Patel Computer College, Vesu</span>
+              <span className="sm:text-lg">C.B.Patel Computer College, Vesu</span>
             </div>
 
             <div className="flex items-center mb-4">

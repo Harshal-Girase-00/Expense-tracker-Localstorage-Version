@@ -12,8 +12,8 @@ const Home = () => {
       {!user ? (
         <>
           <div
-            className="flex items-center bg-gradient-to-r from-[#E0F2FE] to-[#DCFCE7]
- w-full h-96"
+            className="sm:flex items-center bg-gradient-to-r from-[#E0F2FE] to-[#DCFCE7]
+ w-full sm:h-96"
           >
             <div className="lg:w-[25%] flex justify-center">
               <img src="/images/image1.png" className="lg:w-[70%]" alt="info" />
@@ -22,15 +22,15 @@ const Home = () => {
               <img src="/images/image2.png" className="lg:w-96" alt="info" />
             </div>
             <div className="lg:w-[30%]">
-              <h1 className="text-[#0F172A] text-5xl mb-2">
+              <h1 className="text-[#0F172A] text-center sm:text-start sm:pt-0 pt-4 text-3xl sm:text-5xl mb-2">
                 Track Your <br />
                 Expenses Easily
               </h1>
-              <p className="text-md font-semibold mb-2">
+              <p className="px-4 sm:px-0 text-md font-semibold mb-2">
                 Gain control over your finances with intuitive tools and
                 insightful reports
               </p>
-              <button className="h-[52px] px-8 bg-[#5680db] text-white border rounded-xl mr-4">
+              <button className="ml-6 sm:ml-0 h-[52px] px-8 bg-[#5680db] text-white border rounded-xl mr-4">
                 <Link to="/register">Register</Link>
               </button>
               <button className="h-[52px] px-8 bg-transferent text-[#5680db]  border border-[#1E293B] rounded-xl">
@@ -38,7 +38,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:px-[18%] pt-4 pb-4 bg-slate-100">
+          <div className="sm:flex justify-center items-center lg:px-[18%] pt-4 pb-4 bg-slate-100 mb-16 sm:mb-0">
             <img
               src="/images/image3.png"
               className="lg:w-[85%] justify-center "
@@ -51,7 +51,7 @@ const Home = () => {
         <>
           <div
             className="flex flex-col  bg-gradient-to-r from-[#E0F2FE] to-[#DCFCE7]
- w-full pt-6 px-24 pb-16 h-auto font-sans"
+ w-full pt-6 sm:px-24 pb-16 h-auto font-sans px-6"
           >
             <h1 className="pl-2 text-[2rem] text-[#0F172A] font-bold">
               Dashboard
@@ -112,7 +112,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className=" flex flex-col pb-28 lg:pb-0 lg:flex-row justify-between  items-center bg-gradient-to-r from-blue-50 to-green-200 min-h-96 px-24">
+          <div className="  sm:flex flex-col pb-28 lg:pb-0 lg:flex-row justify-between  items-center bg-gradient-to-r from-blue-50 to-green-200 min-h-96 sm:px-24 px-6">
             <img
               src="/images/graph.png"
               className="w-full mb-6 md:m-0 md:w-[65%] h-72"

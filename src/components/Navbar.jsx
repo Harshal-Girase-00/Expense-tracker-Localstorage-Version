@@ -14,8 +14,8 @@ const Navbar = () => {
 
   return (
     
-    <div className="flex  md:justify-between h-20 w-full md:px-20 bg-white shadow-md items-center ">
-      <button className="w-1/3  md:hidden text-3xl"  onClick={() => setMenuOpen(!menuOpen)}> {menuOpen ? "✖" : "☰"}</button>
+    <div className="flex md:justify-between h-20 w-full md:px-20 bg-white shadow-md items-center ">
+      <button className="sm:w-1/3 ml-4 sm:ml-0 mr-8 sm:mr-0 md:hidden text-3xl"  onClick={() => setMenuOpen(!menuOpen)}> {menuOpen ? "✖" : "☰"}</button>
 
       <div className="flex gap-2 items-center">
         <img src="/images/logo.png" alt="logo" className="w-16" />
@@ -24,27 +24,27 @@ const Navbar = () => {
 
       
 
-      <ul className={`flex-col md:flex-row absolute md:static left-0 top-20  md:w-auto bg-white md:flex md:py-0 transition-all duration-300 ${menuOpen ? "flex" : "hidden md:flex" } md:items-center gap-2`}>
+      <ul className={`flex-col md:flex-row absolute md:static left-0 top-20  md:w-auto bg-gray-100 md:flex rounded-xl md:py-0 transition-all duration-300 ${menuOpen ? "flex" : "hidden md:flex" } md:items-center gap-2`}>
         <li className="md:border-r-2 border-black px-4 md:px-2 font-medium">
-          <Link to="/">Home</Link>
+          <button onClick={() => setMenuOpen(!menuOpen)}><Link to="/">Home</Link></button>
         </li>
 
         <li className="md:border-r-2 border-black px-4  md:px-2 font-medium">
-          <Link to="/about">About</Link>
+          <Link onClick={() => setMenuOpen(!menuOpen)}  to="/about">About</Link>
         </li>
 
         <li className="md:border-r-2 border-black px-4 md:px-2 font-medium">
-          <Link to="/contact">Contact</Link>
+          <Link onClick={() => setMenuOpen(!menuOpen)}  to="/contact">Contact</Link>
         </li>
 
         {!user && (
           <>
             <li className="md:border-r-2 border-black px-4 md:px-2 font-medium">
-              <Link to="/login">Login</Link>
+              <Link onClick={() => setMenuOpen(!menuOpen)}  to="/login">Login</Link>
             </li>
 
             <li className="px-2 font-medium">
-              <Link to="/register">Register</Link>
+              <Link onClick={() => setMenuOpen(!menuOpen)} to="/register">Register</Link>
             </li>
           </>
         )}
@@ -52,16 +52,19 @@ const Navbar = () => {
         {user && (
           <>
             <li className="md:border-r-2 border-black px-4 md:px-2 font-medium">
-              <Link to="/add-transaction">Add Transaction</Link>
+              <Link onClick={() => setMenuOpen(!menuOpen)} to="/add-transaction">Add Transaction</Link>
             </li>
 
             <li className="md:mr-4 px-4 md:px-2 font-medium">
-              <Link to="/view-transactions">View Transactions</Link>
+              <Link onClick={() => setMenuOpen(!menuOpen)} to="/view-transactions">View Transactions</Link>
             </li>
 
             <li>
-              <button
-                onClick={handleLogout}
+              <button 
+                onClick={() => {
+                  handleLogout();
+                  setMenuOpen(!menuOpen);
+                }}
                 className="md:px-4 mb-3 md:mb-0 ml-4 md:ml-0 md:py-2 md:bg-slate-700 text-red-500 md:text-white md:rounded-full font-medium"
               >
                 Logout
