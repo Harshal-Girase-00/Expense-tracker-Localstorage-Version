@@ -17,14 +17,16 @@ export default defineConfig({
         display: "standalone",
         icons: [
           {
-            src: "pwa-192-192.webp",
+            src: "pwa-192-192.png",
             sizes: "192x192",
-            type: "image/webp",
+            type: "image/png",
+             purpose: "any maskable"
           },
           {
-            src: "pwa-512-512.webp",
+            src: "pwa-512-512.png",
             sizes: "512x512",
-            type: "image/webp",
+            type: "image/png",
+             purpose: "any maskable"
           },
         ],
       },
