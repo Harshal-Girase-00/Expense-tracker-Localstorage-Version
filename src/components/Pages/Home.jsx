@@ -4,7 +4,12 @@ import { TransactionContext } from "../../context/TransactionContext";
 import { useContext } from "react";
 const Home = () => {
   const { user } = useContext(UserContext);
-  const { getUserLastThreeTxt , getUserMonthlyIncome , getUserMonthlyExpense , getUserRemaningAmount} = useContext(TransactionContext);
+  const {
+    getUserLastThreeTxt,
+    getUserMonthlyIncome,
+    getUserMonthlyExpense,
+    getUserRemaningAmount,
+  } = useContext(TransactionContext);
   const lastThree = getUserLastThreeTxt() || [];
 
   return (
@@ -16,10 +21,14 @@ const Home = () => {
  w-full sm:h-96"
           >
             <div className="lg:w-[25%] flex justify-center">
-              <img src="/images/image1.png" className="lg:w-[70%]" alt="info" />
+              <img
+                src="/images/image1.webp"
+                className="lg:w-[70%]"
+                alt="info"
+              />
             </div>
             <div className="lg:w-[40%] flex justify-center">
-              <img src="/images/image2.png" className="lg:w-96" alt="info" />
+              <img src="/images/image2.webp" className="lg:w-96" alt="info" />
             </div>
             <div className="lg:w-[30%]">
               <h1 className="text-[#0F172A] text-center sm:text-start sm:pt-0 pt-4 text-3xl sm:text-5xl mb-2">
@@ -40,7 +49,7 @@ const Home = () => {
           </div>
           <div className="sm:flex justify-center items-center lg:px-[18%] pt-4 pb-4 bg-slate-100 mb-16 sm:mb-0">
             <img
-              src="/images/image3.png"
+              src="/images/image3.webp"
               className="lg:w-[85%] justify-center "
               alt="main image"
             />
@@ -60,13 +69,19 @@ const Home = () => {
             <div className="px-2 flex flex-col gap-6 md:flex-row w-full lg:gap-20 mt-6 justify-between">
               <div className="flex items-center w-full lg:w-[340px] bg-white h-36 pt-6 lg:py-6 rounded-3xl shadow-lg">
                 <div className="ml-6 p-2 flex items-center justify-center w-16 h-16 bg-green-100 rounded-full">
-                  <img src="/images/income.png" className="w-10" alt="income" />
+                  <img
+                    src="/images/income.webp"
+                    className="w-10"
+                    alt="income"
+                  />
                 </div>
                 <div className="ml-4 h-full">
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Total Income
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">${getUserMonthlyIncome()}</p>
+                  <p className="text-4xl text-black font-bold p-0">
+                    ${getUserMonthlyIncome()}
+                  </p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     This month
                   </p>
@@ -76,7 +91,7 @@ const Home = () => {
               <div className="flex items-center w-full lg:w-[340px] bg-white h-36 py-6 rounded-3xl shadow-lg">
                 <div className="ml-6 p-2 flex items-center justify-center w-16 h-16 bg-red-100 rounded-full">
                   <img
-                    src="/images/expense.png"
+                    src="/images/expense.webp"
                     className="w-10"
                     alt="income"
                   />
@@ -85,7 +100,9 @@ const Home = () => {
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Total Expense
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">${getUserMonthlyExpense()}</p>
+                  <p className="text-4xl text-black font-bold p-0">
+                    ${getUserMonthlyExpense()}
+                  </p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     This month
                   </p>
@@ -95,7 +112,7 @@ const Home = () => {
               <div className="flex items-center w-full lg:w-[340px]  bg-white h-36 py-6 rounded-3xl shadow-lg">
                 <div className="ml-6 p-2 flex items-center justify-center ">
                   <img
-                    src="/images/remaning.png"
+                    src="/images/remaning.webp"
                     className=" w-16 h-16 rounded-full"
                     alt="income"
                   />
@@ -104,7 +121,9 @@ const Home = () => {
                   <p className="text-lg text-slate-800 font-medium p-0">
                     Remaining Balance
                   </p>
-                  <p className="text-4xl text-black font-bold p-0">${getUserRemaningAmount()}</p>
+                  <p className="text-4xl text-black font-bold p-0">
+                    ${getUserRemaningAmount()}
+                  </p>
                   <p className="text-sm text-[#64748B] font-medium mt-1">
                     Available
                   </p>
@@ -114,7 +133,7 @@ const Home = () => {
           </div>
           <div className="  sm:flex flex-col pb-28 lg:pb-0 lg:flex-row justify-between  items-center bg-gradient-to-r from-blue-50 to-green-200 min-h-96 sm:px-24 px-6">
             <img
-              src="/images/graph.png"
+              src="/images/graph.webp"
               className="w-full mb-6 md:m-0 md:w-[65%] h-72"
               alt="grap"
             />
@@ -154,7 +173,7 @@ const Home = () => {
                         <td className="flex justify-between items-center border-b p-3">
                           <div className="flex gap-4">
                             <img
-                              src="/images/cash.png"
+                              src="/images/cash.webp"
                               alt="img"
                               className="bg-green-100 rounded-full h-12 w-12"
                             />

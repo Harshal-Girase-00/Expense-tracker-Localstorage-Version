@@ -13,12 +13,12 @@ const ViewTransactions = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="sm:px-16 h-[calc(100vh-64px-80px)] bg-gradient-to-r from-blue-200 to-green-200">
+    <div className="sm:px-16 px-6 h-[calc(100vh-64px-80px)] bg-gradient-to-r from-blue-200 to-green-200">
       <h1 className="text-3xl text-center md:text-left text-slate-800 font-bold pt-10">
         View Transaction
       </h1>
 
-      <div className="h-auto bg-white shadow-xl rounded-3xl min-h-96 mt-6 p-6">
+      <div className="h-auto bg-white shadow-xl rounded-3xl min-h-96 mt-6 p-4 sm:p-6">
         <div className="overflow-x-auto rounded-2xl shadow-lg">
           <table className="w-full border-collapse text-sm sm:text-base">
             <thead className="bg-gradient-to-r from-blue-100 to-green-100 text-gray-900">

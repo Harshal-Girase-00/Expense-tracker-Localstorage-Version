@@ -24,18 +24,20 @@ const Contact = () => {
           <div className="flex flex-col w-full lg:w-[40%] ">
             <div className="flex sm:items-center mb-4">
               <img
-                src="/images/location.png"
-                className="sm:w-8 w-8 h-8 mr-2"
-                alt="lacation"
+                src="/images/location.webp"
+                className="sm:w-8 sm:h-auto w-8 h-8 mr-2"
+                alt="location"
               />{" "}
               <span className="text-slate-950 font-bold text-lg mr-1">
                 Address:
               </span>
-              <span className="sm:text-lg">C.B.Patel Computer College, Vesu</span>
+              <span className="sm:text-lg">
+                C.B.Patel Computer College, Vesu
+              </span>
             </div>
 
             <div className="flex items-center mb-4">
-              <img src="/images/call.png" className="w-8 mr-2" alt="phone" />{" "}
+              <img src="/images/call.webp" className="w-8 mr-2" alt="phone" />{" "}
               <span className="text-slate-950 font-bold text-lg mr-1">
                 Phone:
               </span>
@@ -43,7 +45,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-center mb-4">
-              <img src="/images/mail.png" className="w-8 mr-2" alt="Email" />{" "}
+              <img src="/images/mail.webp" className="w-8 mr-2" alt="Email" />{" "}
               <span className="text-slate-950 font-bold text-lg mr-1">
                 Email:
               </span>
@@ -51,7 +53,7 @@ const Contact = () => {
             </div>
 
             <img
-              src="/images/location2.png"
+              src="/images/location2.webp"
               alt="map"
               className="rounded-xl w-64 sm:w-64 mb-2.5 pb-12"
             />
