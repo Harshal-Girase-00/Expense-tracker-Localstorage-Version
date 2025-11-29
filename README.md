@@ -21,13 +21,22 @@ https://expense-tracker-by-harshal.netlify.app/
 
 🖼️ Screenshots
 🏠 Home Page (Total Balance Overview)
-<img src="https://github.com/user-attachments/assets/4bd27be1-f8db-4c84-b836-56d16bab3a08" width="750"/>
+<img width="1920" height="1140" alt="Screenshot 2025-11-23 025959 - Copy" src="https://github.com/user-attachments/assets/fee4a902-fb2f-4d0d-af27-faaa0415ebc5" />
+![WhatsApp Image 2025-11-29 at 11 18 09 AM (2)](https://github.com/user-attachments/assets/f35ae89b-039e-45af-821c-8f2fc3251f34)
+
 ➕ Add Transaction
-<img src="https://github.com/user-attachments/assets/4448bd86-7fb1-4da7-9873-f5c1c5db4620" width="750"/>
+<img width="1920" height="1140" alt="Screenshot 2025-11-29 111353" src="https://github.com/user-attachments/assets/8ccd5f3d-4128-4645-96c2-9ed71ba8b69c" />
+![WhatsApp Image 2025-11-29 at 11 18 09 AM](https://github.com/user-attachments/assets/d75cd4e4-ec95-4236-84e0-4ffb8f3caeaf)
+
+
 📄 View Transactions (Pagination + Filters)
-<img src="https://github.com/user-attachments/assets/1a93c1c2-404c-4caa-b26d-f53519a21392" width="750"/>
+<img width="1920" height="1140" alt="Screenshot 2025-11-29 111401" src="https://github.com/user-attachments/assets/a2523f04-ce62-4841-89a5-4c36cbc060a6" />
+![WhatsApp Image 2025-11-29 at 11 18 10 AM (1)](https://github.com/user-attachments/assets/535ec637-b3d2-428f-9474-d83858aa2051)
+
+
 🔐 Login / Register UI
-<img src="https://github.com/user-attachments/assets/83c97066-77dd-4f43-a022-e23aab7ffc20" width="450"/>
+<img width="1920" height="1140" alt="Screenshot 2025-11-29 111544" src="https://github.com/user-attachments/assets/eb0fc7db-70f9-4847-a079-20fb8ee36797" />
+
 
 More screenshots are available in the repository Images section.
 
